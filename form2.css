@@ -1,0 +1,38 @@
+html,
+body
+{
+    
+    background-color: rgb(3, 2, 2);
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.global-container
+{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    justify-content: center;
+    color: black;
+}
+form
+{
+    padding-top: 10px;
+    font-size: 14px;
+    margin-top: 20px;
+
+}
+.login-form
+{
+    width: 380px;
+    margin: 20px;
+    /* background-color: #1a2226 !important; */
+    /* background: linear-gradient(90deg, #d53369 0%, #daae51 100%); */
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+    border-radius: 10px !important;
+}
+.card-tittle
+{
+    font-weight: 900px;
+    padding: 20px;
+}

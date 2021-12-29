@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/form2.css">
+    <!-- <script src="../javascript/form2.js"></script> -->
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="global-container">
+        <div class="card login-form">
+            <div class="card-body">
+                <h1 class="card-tittle text-center">LOGIN</h1>
+                <div class="card-text" id="error">
+                    <form name="myForm" action="#" method="get">
+                        <div class="form-group">
+                            <label for="InputEmail">Email Address</label>
+                            <input type="email" class="form-control form-control-sm" name="user" id="Inputemail">
+                            <span class="error" id="invalid_email">
+                                Enter valid emailid
+                            </span>
+                        </div>
+                        <div class="form-group">
+                            <label for="Inputphone">Phone</label>
+                            <input type="phone" class="form-control form-control-sm" name="phone" id="Inputphone">
+                            <span class="errorphone">
+                                Enter your name phone number
+                            </span>
+                        </div>
+                        <div class="form-group">
+                            <label for="Inputpassword">Password</label>
+                            <input type="password" class="form-control form-control-sm" name="pass" id="Inputpassword">
+                            <span class="errorpass">
+                                Enter only 8 Characters
+                            </span>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputDate">Date</label>
+                            <input type="date" class="form-control  form-control-sm" id="inputDate">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputTime">Time</label>
+                            <input type="Time" class="form-control  form-control-sm" id="inputTime">
+                        </div><br>
+
+                        <div class="form-group">
+                            <label for="">GENDER</label><br>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                male
+                            </label>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                female
+                            </label>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                            <label class="form-check-label" for="flexRadioDefault3">
+                                Others
+                            </label>
+                        </div><br>
+
+                        <div class="form-group">
+                            <label for="cars">Choose one option:</label>
+                            <select class="form-select  ">
+                                <option>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div><br>
+                        <div class="form-group">
+                            <label for="cars">Choose a bike:</label>
+                            <select name="cars" id="cars" multiple>
+                                <option value="BMW">BMW</option>
+                                <option value="DUCATI">DUCATI</option>
+                                <option value="ATHER">ATHER</option>
+                                <option value="HimalAYAN">HimalAYAN</option>
+                            </select>
+                        </div><br>
+
+                        <div class="form-group">
+                            <label for="">SELECT CHECKBOX:</label><br>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                checkbox
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <label class="form-check-label" for="flexCheckChecked">
+                                checkbox-one
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked1">
+                            <label class="form-check-label" for="flexCheckChecked1">
+                                checkbox-two
+                            </label>
+                        </div><br>
+                        <div class="form-group">
+
+                            <textarea class="form-control " placeholder="Leave a comment here"
+                                id="floatingTextarea"></textarea>
+
+                        </div><br>
+
+                        <div class="input-group input-daterange">
+                            <input type="text" class="form-control" value="2012-04-05">
+                            <div class="input-group-addon">to</div>
+                            <input type="text" class="form-control" value="2012-04-19">
+                        </div>
+                        <br>
+
+                        <div>
+
+                            <input type="submit" name="" onclick="validate()" id="submit" value="login">
+                        </div>
+
+                    </form>
+                    <div id="correct" style="color:gray;"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $(".error").hide();
+            $(".errorphone").hide();
+            $(".errorpass").hide();
+            var error_email = false;
+            var error_phone = false;
+            var error_pass = false;
+            $("#Inputemail").focusout(function() {
+            check_email();
+            });
+            $("#Inputphone").focusout(function() {
+            check_phone();
+            });
+            $("#Inputpassword").focusout(function() {
+            check_pass();
+            });
+            function check_email() {
+                var pattern = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+                var email = $("#Inputemail").val();
+                if (pattern.test(email) && email !== '') {
+                    $(".error").hide();
+                    $("#Inputemail")
+                } else {
+                    $(".error").html("enter valid email id");
+                    $(".error").show();
+                    $(".error")
+                    error_email = true;
+                }
+            }
+            function check_phone() {
+                var patternphone = /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/;
+                var phoneno = $("#Inputphone").val();
+                if (patternphone.test(phoneno) && phoneno !== '') {
+                    $(".errorphone").hide();
+                    $("#Inputphone")
+                } else {
+                    $(".errorphone").html("enter only numbers");
+                    $(".errorphone").show();
+                    $(".errorphone")
+                    error_phone = true;
+                }
+            }
+
+            function check_pass() {
+                var patternpass = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+                var passw = $("#Inputpassword").val();
+                if (patternpass.test(passw) && passw !== '') {
+                    $(".error").hide();
+                    $("#Inputpassword")
+                } else {
+                    $(".errorpass").html("enter only 8 charecters");
+                    $(".errorpass").show();
+                    $(".errorpass")
+                    error_pass = true;
+                }
+            }
+
+
+
+
+        });
+
+
+
+
+
+
+
+
+            //     $('.error').hide();
+            //     $('#submit').click(function () {
+            //         var email = $('#Inputemail').val();
+            //         var phone = $('#Inputphone').val();
+            //         if (email == '') {
+            //             $('#Inputemail').next().show();
+            //             return false;
+            //         }
+            //         if (IsEmail(email) == false) {
+            //             $('#invalid_email').show();
+            //             return false;
+            //         }
+            //         if (phone == '') {
+            //             $('#Inputphone').next().show();
+            //             return false;
+            //         }
+            //     });
+            // });
+            // function IsEmail(email) {
+            //     var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            //     if (!regex.test(email)) {
+            //         return false;
+            //     } else {
+            //         return true;
+            //     }
+            // }
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
